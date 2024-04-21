@@ -25,7 +25,7 @@ class UsuarioBU(ABC):
             self.__dias_de_emprestimo = dias_de_emprestimo
 
     @abstractmethod
-    def emprestar(self, titulo_liro:str):
+    def emprestar(self, titulo_livro:str):
         pass
 
     @abstractmethod
