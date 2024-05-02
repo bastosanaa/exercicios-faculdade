@@ -28,7 +28,12 @@ class AbstractControladorJogo(ABC):
      Permite incluir um novo Personagem na lista de personagens do jogo
      @param energia Energia do novo Personagem
      @param habilidade Habilidade do novo Personagem
+<<<<<<< HEAD
+     @param velocidade Velocidade do novo Persona
+     gem
+=======
      @param velocidade Velocidade do novo Personagem
+>>>>>>> 6a0125f5eb00e2f38911b6837b3db5d98d9eda41
      @param resistencia Resistencia do novo Personagem
      @param tipo TipoPersonagem (Enum) do novo Personagem.
      Deve ser utilizado TipoPersonagem.TIPO
