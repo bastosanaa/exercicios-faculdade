@@ -1,4 +1,4 @@
-from AbstractPersonagem import *
+from AbstractPersonagem import AbstractPersonagem, Tipo
 
 
 class Personagem(AbstractPersonagem):
@@ -7,7 +7,7 @@ class Personagem(AbstractPersonagem):
                  velocidade: int, resistencia: int, tipo: Tipo):
         if isinstance(energia, int):
             self.__energia = energia
-        if isinstance(habilidade,int):
+        if isinstance(habilidade, int):
             self.__habilidade = habilidade
         if isinstance(velocidade, int):
             self.__velocidade = velocidade
@@ -16,23 +16,22 @@ class Personagem(AbstractPersonagem):
         if isinstance(tipo, Tipo):
             self.__tipo = tipo
 
-
     @property
     def tipo(self) -> Tipo:
-        pass#implementar
+        return self.__tipo
 
     @property
     def energia(self) -> int:
-        pass#implementar
+        return self.__energia
 
     @property
     def habilidade(self) -> int:
-        pass#implementar
+        return self.__habilidade
 
     @property
     def velocidade(self) -> int:
-        pass#implementar
+        return self.__velocidade
 
     @property
     def resistencia(self) -> int:
-        pass#implementar
+        return self.__resistencia
